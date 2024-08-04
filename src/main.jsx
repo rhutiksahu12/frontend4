@@ -7,16 +7,9 @@ import ItemDetail from './components/PostDetail.jsx'
 import { Provider } from 'react-redux'
 import { store } from './redux/store.jsx'
 import PostDetail from './components/PostDetail.jsx'
+import router from './router/router.jsx'
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />
-  }, {
-    path: '/item/:id',
-    element: <PostDetail />
-  }
-])
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
